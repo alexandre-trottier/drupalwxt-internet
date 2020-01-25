@@ -4,7 +4,8 @@ scripts/local
 scripts/drupal
 files_private/
 html/sites/dv13.dd
-
+html/sites/default/settings.php
+html/info.php
 # Composer files
 composer.lock
 

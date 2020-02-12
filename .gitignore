@@ -10,6 +10,7 @@ html/info.php
 composer.lock
 
 # Ignore Development Files
+storage/
 compass_app_log.txt
 *.DS_Store
 *.diff

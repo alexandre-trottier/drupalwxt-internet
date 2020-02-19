@@ -7,6 +7,7 @@ run:
 	-p 80:80 \
 	-h dev.tc.canada.ca \
 	--network host \
+	-v $(CURDIR)/html/sites/default/settings.php:/var/www/html/sites/default/settings.php \
 	-v $(CURDIR)/docker/apache2/sites-available/vhost.conf:/etc/apache2/sites-available/000-default.conf \
 	-v $(CURDIR)/storage/:/home/ \
 	-e DRUPAL_HASH_SALT='PHlhk1pNA3I-ifkIF93PaDfVbX47lddV-1v5pNOLVV83aYct4sg8OIaaRDeXvSlAUzlD9hlq2w' \
